@@ -1,13 +1,28 @@
+
 # SACSharp
+A static analyzer for C# projects. Currently an ongoing project.
+## Installation
+You need .NET 8.0 to run this project.
 
-A static analyzer for C# projects.
+Install SACSharp with dotnet
 
-# Installation
+```bash
+  git clone https://github.com/Shriyansh-Aggarwal/SACSharp.git
+  cd SACSharp
+  dotnet build
+  dotnet pack -c Release --output ./nupkg
+  dotnet tool install --global --add-source ./nupkg sacsharp
+```
+    
+## Usage
 
-Clone the repository of this project
-Pack and install as a global tool:
-`dotnet tool install --global --add-source ./dist/nupkg sacsharp`
+Create a C# project and use the below command (Remember to only provide the project directory as the argument, not a file!)
 
-# Usage
+```bash
+sacsharp scan /path/to/project-directory
+```
 
-`sacsharp scan /path/to/project-directory`
+I have added a tests folder in the repository, you can run the tests to check if the installation works by running this command in SACSharp directory:
+```bash
+sacsharp scan ./tests
+```

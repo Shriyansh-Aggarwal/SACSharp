@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dist\nupkg\" />
 	  <PackageReference Include="Microsoft.Build.Locator" Version="1.9.1" />
 	  <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.13.0" />
   </ItemGroup>
