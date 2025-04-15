@@ -24,5 +24,5 @@ sacsharp scan /path/to/project-directory
 
 I have added a tests folder in the repository, you can run the tests to check if the installation works by running this command in SACSharp directory:
 ```bash
-sacsharp scan ./tests
+sacsharp scan ./Tests
 ```
